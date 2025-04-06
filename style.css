@@ -1,0 +1,348 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: black;
+    color: white;
+
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+li{
+    list-style: none;
+}
+/* nav */
+
+nav{
+    background-color: gray;
+    padding: 1rem 4rem;
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    height: 80px;
+
+}
+ nav ul{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+ }
+
+ nav ul li a{
+    font-size: 18px;
+ }
+
+ nav ul li a::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: red;
+    margin-right: auto;
+    transition: 0.5s;
+
+ }
+
+ nav ul li a:hover::after{
+    width: 100%;
+ }
+
+ nav ul li a:hover{
+    color: red;
+ }
+
+.fa-bars{
+   font-size: 24px;
+   cursor: pointer;
+   
+}
+
+.menu-icon{
+   display: none;
+
+}
+
+ /* hero section */
+
+ .hero-section{
+    height: calc(100vh- 80px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 4rem;
+
+ }
+
+ .hero-section .left{
+    width: 50%;
+ }
+
+ .hero-section .left h1{
+    font-size: 42px;
+ }
+
+.hero-section .left p{
+    font-size: 18px;
+    color: gray;
+    padding-block: 20px;
+}
+
+.hero-section .left a{
+    font-weight: 600;
+}
+.btn{
+    background-color: red;
+    padding: 12px 30px;
+    display: inline;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: black;
+}
+
+/* menu Section*/
+
+#menuSection{
+    padding: 100px 4rem;
+
+}
+
+#menuSection h2{
+   text-align: center;
+    font-size: 28px;
+}
+
+.menu-container{
+    padding: 80px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+
+}
+.menu-item{
+    width: 320px;
+    background-color: white;
+    padding: 20px;
+    color: black;
+}
+ .menu-item img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+ }
+ .menu-item h4{
+    padding-block: 15px;
+    color: black;
+ }
+
+ /* trending food */
+
+ #trendSection{
+    padding: 100px 4rem;
+    padding-top: 40px;
+
+
+ }
+ #trendSection h2{
+    font-size: 28px;
+    text-align: center;
+ }
+
+ .trending-container{
+    padding: 60px 0;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+ }
+
+ .trend-iems{
+    width: 320px;
+    height: 320px;
+    background-color: white;
+    padding: 6px;
+    overflow: hidden;
+ }
+
+ .trend-iems img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s;
+ }
+
+ .trend-iems img:hover{
+    transform: scale(1.3);
+ }
+
+ /* reciew section */
+
+ #reviewSection{
+    padding: 100px 4rem;
+
+ }
+
+ #reviewSection h2{
+    font-size: 28px;
+    text-align: center;
+
+ }
+
+ .review-container{
+    padding: 60px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+ }
+
+ .review{
+    width: 320px;
+    background-color: white;
+    text-align: center;
+    color: black;
+    padding: 20px;
+    border-radius: 12px;
+ }
+
+ .review img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    padding: 20px;
+
+ }
+
+ .review p{
+    font-weight: 13px;
+    padding: 20px;
+ }
+
+
+ /* blog section */
+
+ #blogSection{
+   padding: 100px 4rem;
+
+
+ }
+
+ #blogSection h2{
+   font-size: 28px;
+   text-align: center;
+ }
+
+ .blog-container{
+   padding: 60px 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+   gap: 40px;
+
+
+ }
+
+ .blog{
+   width: 320px;
+   background-color: white;
+   padding: 15px;
+
+ }
+
+ .blog h4{
+   color: black;
+   padding-block: 15px;
+   font-size: 18px;
+
+ }
+
+ .blog img{
+   width: 100%;
+   height: 180px;
+   object-fit: cover;
+
+
+ }
+
+
+ footer{
+   padding: 40px 4rem;
+   background-color: black;
+   display: flex;
+   align-items: center;
+   justify-content: baseline;
+   gap: 30px;
+
+ }
+
+.col h3{
+   font-weight: 700;
+
+}
+
+.col p{
+   font-size: 13px;
+   color: white;
+}
+
+.col-1{
+   width: 300px;
+}
+
+.col h3{
+   padding-bottom: 20px;
+
+}
+
+.col li{
+   color: white;
+
+
+}
+
+/* media query */
+
+@media (max-width:800px) {
+   nav ul{
+      position: absolute;
+      top: 80px;
+      left: 0;
+      right: 0;
+      background: black;
+      flex-direction: column;
+   }
+
+   nav ul li:last-child{
+      padding-bottom: 40px;
+
+
+   }
+
+   .menu-icon{
+      display: block;
+   }
+}
+
+
+
+
+
+
+
