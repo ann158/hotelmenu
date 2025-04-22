@@ -5,14 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
     <title>Menu</title>
 </head>
 <body>
     <nav>
         <div class="logo">
             <h2>Fresh Menu</h2>
-
         </div>
         <ul class="menuLinks">
             <li><a href="#heroSection">Home</a></li>
@@ -21,233 +19,152 @@
             <li><a href="#trendSection">Trends</a></li>
             <li><a href="">Contact</a></li>
             <li><a href="#blogSection">Blogs</a></li>
-
         </ul>
         <div class="menu-icon">
-            <i class="fa fa bars" id="menuIcon" aria-hidden="true"></i>
-             
+            <i class="fa fa-bars" id="menuIcon" aria-hidden="true"></i>
         </div>
     </nav>
     
-    <!--hero section-->
-
     <div id="heroSection" class="hero-section">
         <div class="left">
-            <h1>Discover the Best Food and Fresh Drinks in FreshMenu </h1>
+            <h1>Discover the Best Food and Fresh Drinks in FreshMenu</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio excepturi ut assumenda, necessitatibus voluptate odio quas beatae animi alias consectetur perferendis vel impedit sed fuga vero corporis, at eligendi velit?</p>
-
-
-             <a href="" class="btn">Explore More</a>
-
-
-
+            <a href="" class="btn">Explore More</a>
         </div>
-
         <div class="right">
-            <img src="images/istockphoto-2170490548-612x612.jpg" alt="">
-
+            <img src="images/istockphoto-2170490548-612x612.jpg" alt="Food Image">
         </div>
-
     </div>
-    <!--menusection-->
 
     <section id="menuSection">
         <h2>Our Menu</h2>
-    
         <div class="menu-container">
-            <div class="menu-item">
-                <img src="images/food1.jpg" alt="">
+            <div class="menu-item" data-price="12.99">
+                <img src="images/food1.jpg" alt="Food 1">
                 <h4>Toast bread with fruits in plate</h4>
                 <div class="btn">Add to cart</div>
             </div>
             
-            <div class="menu-item">
-                <img src="images/food2 (1).jpg" alt="">
+            <div class="menu-item" data-price="9.99">
+                <img src="images/food2 (1).jpg" alt="Food 2">
                 <h4>Toast bread with fruits in plate</h4>
                 <div class="btn">Add to cart</div>
             </div>
             
-            <div class="menu-item">
-                <img src="images/food2 (3).jpg" alt="">
+            <div class="menu-item" data-price="15.99">
+                <img src="images/food2 (3).jpg" alt="Food 3">
                 <h4>Toast bread with fruits in plate</h4>
                 <div class="btn">Add to cart</div>
             </div>
             
-            <div class="menu-item">
-                <img src="images/food2 (4).jpg" alt="">
+            <div class="menu-item" data-price="20.99">
+                <img src="images/food2 (4).jpg" alt="Food 4">
                 <h4>Toast bread with fruits in plate</h4>
                 <div class="btn">Add to cart</div>
             </div>
             
-            <div class="menu-item">
-                <img src="images/food2 (5).jpg" alt="">
+            <div class="menu-item" data-price="8.99">
+                <img src="images/food2 (5).jpg" alt="Food 5">
                 <h4>Toast bread with fruits in plate</h4>
                 <div class="btn">Add to cart</div>
             </div>
             
-            <div class="menu-item">
-                <img src="images/food2 (6).jpg" alt="">
+            <div class="menu-item" data-price="10.99">
+                <img src="images/food2 (6).jpg" alt="Food 6">
                 <h4>Toast bread with fruits in plate</h4>
                 <div class="btn">Add to cart</div>
             </div>
         </div>
     </section>
 
-    <!--Trendind Food-->
-    <section id="trendSection">
-
-        <h2>Trending Food</h2>
-
-        <div class="trending-container">
-
-            <div class="trend-iems">
-                <img src="images/food2 (7).jpg" alt="">
-
-            </div>
-
-            <div class="trend-iems">
-                <img src="images/tr1.jpg" alt="">
-
-            </div>
-
-            <div class="trend-iems">
-                <img src="images/tr3.jpg" alt="">
-
-            </div>
-
-        </div>
-
+    <section id="cartSection">
+        <h2>Your Cart</h2>
+        <div class="cart"></div>
+        <button id="clearCartBtn" class="btn-clear">Clear Cart</button>
     </section>
-
-    <!--reviews-->
-
-    <section id="reviewSection">
-        <h2>Customer Reviews</h2>
-        <div class="review-container">
-            <div class="review">
-                <img src="images/logan.jpg" alt="Customer photo">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat cupiditate assumenda explicabo quis iste praesentium a. Aspernatur libero voluptate magnam perspiciatis quisquam, rerum quo iusto!</p>
-            </div>
-    
-            <div class="review">
-                <img src="images/isaac.jpg" alt="Customer photo">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat cupiditate assumenda explicabo quis iste praesentium a. Aspernatur libero voluptate magnam perspiciatis quisquam, rerum quo iusto!</p>
-            </div>
-    
-            <div class="review">
-                <img src="images/WhatsApp Image 2025-03-26 at 22.10.47_61b83019.jpg" alt="Customer photo">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat cupiditate assumenda explicabo quis iste praesentium a. Aspernatur libero voluptate magnam perspiciatis quisquam, rerum quo iusto!</p>
-            </div>
-        </div>
-    </section>
-
-    <!--blogsection-->
-
-    <section id="blogSection">
-
-        <h2>Read Food Blogs</h2>
-
-        <div class="blog-container">
-            <div class="blog">
-                <img src="images/blog.jpg" alt="">
-
-                <h4>Latest food Blog</h4>
-
-                <div class="btn">Read More</div>
-            </div>
-
-                <div class="blog">
-                    <img src="images/food2 (1).jpg" alt="">
-    
-                    <h4>Latest food Blog</h4>
-    
-                    <div class="btn">Read More</div>
-                </div>
-
-                    <div class="blog">
-                        <img src="images/food2 (5).jpg" alt="">
-        
-                        <h4>Latest food Blog</h4>
-        
-                        <div class="btn">Read More</div>
-                    </div>
-                        
-                    
-
-
-                
-
-            </div>
-
-        </div>
-        
-    </section>
-
-    <!--footer dection-->
 
     <footer>
         <div class="col col-1">
-
             <h3>About Us</h3>
-
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, porro delectus placeat ea ipsam amet tenetur sit harum distinctio nobis optio consequatur quibusdam rem perspiciatis!</p>
-
         </div>
-
         <div class="col">
-
             <h3>Our Food</h3>
-
             <ul>
                 <li>Quantity</li>
                 <li>Affordable</li>
                 <li>Best price</li>
                 <li>Low cost</li>
-                
             </ul>
-
         </div>
-
         <div class="col">
-
             <h3>Our Offers</h3>
-
             <ul>
                 <li>20%</li>
                 <li>Free 1st meal</li>
                 <li>Quality</li>
                 <li>Affordable</li>
-                
             </ul>
-
         </div>
-
         <div class="col">
-
             <h3>Contact Us</h3>
-
             <ul>
-                <li>Linkdin</li>
+                <li>LinkedIn</li>
                 <li>Facebook</li>
                 <li>Instagram</li>
                 <li>Tiktok</li>
-                
             </ul>
-
         </div>
-
-        <script>
-            let menuLinks = document.getElementById("menuLinks")
-            let menuIcon = document.getElementById("menuIcon")
-
-            menuLinks.style.maxHeight === "0px"
-            menuIcon.addEventListener("click", () =>{
-                if(menuLinks.style.maxHeight ="350px")
-                else{
-                    menuLinks.style.maxHeight = "0px"
-                }
-            })
-        </script>
-
     </footer>
-    
+
+    <script>
+        const menuItems = document.querySelectorAll('.menu-item');
+        const cart = [];
+        let totalPrice = 0;
+
+        menuItems.forEach(item => {
+            item.querySelector('.btn').addEventListener('click', () => {
+                const name = item.querySelector('h4').innerText;
+                const price = parseFloat(item.dataset.price);
+                
+                // Add item to cart
+                cart.push({ name, price });
+                totalPrice += price;
+
+                // Update cart display
+                updateCart();
+            });
+        });
+
+        function updateCart() {
+            const cartDisplay = document.querySelector('.cart');
+            if (cart.length === 0) {
+                cartDisplay.innerHTML = '<p>Your cart is empty!</p>';
+            } else {
+                cartDisplay.innerHTML = cart.map((item, index) => `
+                    <p>${item.name} - $${item.price} 
+                    <button class="remove-item" data-index="${index}">Remove</button></p>
+                `).join('');
+                cartDisplay.innerHTML += `<p>Total: $${totalPrice}</p>`;
+            }
+
+            // Attach remove event listeners
+            document.querySelectorAll('.remove-item').forEach(button => {
+                button.addEventListener('click', (event) => {
+                    const index = event.target.dataset.index;
+                    totalPrice -= cart[index].price;
+                    cart.splice(index, 1);
+                    updateCart();
+                });
+            });
+        }
+
+        // Clear cart functionality
+        document.getElementById('clearCartBtn').addEventListener('click', () => {
+            cart.length = 0;
+            totalPrice = 0;
+            updateCart();
+        });
+    </script>
+</body>
+</html>
